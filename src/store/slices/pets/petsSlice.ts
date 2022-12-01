@@ -1,16 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { ListState, pets } from '../../../utils/consts';
+import reducers from './reducers';
+
+const initialState: ListState = {
+  list: pets
+}
 
 export const petsSlice = createSlice({
   name: 'pets',
-  initialState: {
-    value: null
-  },
-  reducers: {
-    consoleAction: (state, /* action */ ) => {
-      console.log(state.value)
-    },
-  },
+  initialState,
+  reducers,
 })
 // Action creators are generated for each case reducer function
 
-export const { consoleAction } = petsSlice.actions
+export const { updatePoints } = petsSlice.actions

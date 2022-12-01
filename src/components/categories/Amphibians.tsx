@@ -1,6 +1,6 @@
+import ElementList from "../common/ElementList";
 import { useAppSelector } from "../../store";
 import { updatePoints } from "../../store/slices/amphibians";
-import ElementList from "../common/ElementList";
 
 
 const Amphibians = () => {
