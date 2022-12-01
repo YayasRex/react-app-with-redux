@@ -1,16 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { ListState, humans } from '../../../utils/consts';
+import reducers from './reducers';
+
+const initialState: ListState = {
+  list: humans
+}
 
 export const humansSlice = createSlice({
   name: 'humans',
-  initialState: {
-    value: null
-  },
-  reducers: {
-    consoleAction: (state, /* action */ ) => {
-      console.log(state.value)
-    },
-  },
+  initialState,
+  reducers,
 })
 // Action creators are generated for each case reducer function
 
-export const { consoleAction } = humansSlice.actions
+export const { updatePoints } = humansSlice.actions

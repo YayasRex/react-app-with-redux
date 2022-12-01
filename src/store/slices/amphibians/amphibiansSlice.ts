@@ -1,23 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { IListState, amphibians } from '../../../utils/consts';
+import { ListState, amphibians } from '../../../utils/consts';
+import reducers from './reducers';
 
-const initialState: IListState = {
-  list: amphibians
+const initialState: ListState = {
+  list: amphibians,
 }
 
 export const amphibiansSlice = createSlice({
   name: 'amphibians',
   initialState,
-  reducers: {
-    updatePoints: (state, action ) => {
-      console.log(state.list)
-      state.list.map((curr) => {
-        if (curr.id === action.payload) curr.points += 1;
-        return curr;
-      });
-    },
-  },
+  reducers
 })
-// Action creators are generated for each case reducer function
 
 export const { updatePoints } = amphibiansSlice.actions

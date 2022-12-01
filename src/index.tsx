@@ -8,10 +8,10 @@ import { store } from './store';
 import './index.css';
 import Home from './views/Home';
 import Categories from './views/Categories';
-import Pets from './components/Pets';
-import Humans from './components/Humans';
-import Amphibians from './components/Amphibians';
-import Element from './components/Element';
+import Pets from './components/categories/Pets';
+import Humans from './components/categories/Humans';
+import Amphibians from './components/categories/Amphibians';
+import Element from './components/common/Element';
 
 
 const router = createBrowserRouter([

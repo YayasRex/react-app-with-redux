@@ -1,15 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { amphibiansSlice } from './slices/amphibians';
+import { humansSlice } from './slices/humans';
+import { petsSlice } from './slices/pets';
 
 export const store = configureStore({
   reducer: {
     amphibians: amphibiansSlice.reducer,
-    // humans: ,
-    // pets:
+    humans: humansSlice.reducer,
+    pets: petsSlice.reducer
   }
 });
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 export type AppDispatch = typeof store.dispatch
