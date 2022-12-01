@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
+import { amphibiansSlice } from './slices/amphibians';
 
 export const store = configureStore({
   reducer: {
-    // amphibians: ,
+    amphibians: amphibiansSlice.reducer,
     // humans: ,
     // pets:
   }
