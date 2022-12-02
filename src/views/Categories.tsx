@@ -1,10 +1,11 @@
+import './index.css'
 import { Link } from 'react-router-dom'
 
 const Categories = () => {
   return (
     <>
       <h2>Categories</h2>
-      <ul>
+      <ul className='categories'>
         <li>
           <Link to="pets">Pets</Link>
         </li>

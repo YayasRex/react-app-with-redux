@@ -1,4 +1,22 @@
 img {
-  width: 170px;
+  width: 150px;
   height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ccc;
+  margin: 20px 0;
+}
+
+.container-list-elements {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.list-elements {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

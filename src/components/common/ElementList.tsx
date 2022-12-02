@@ -15,10 +15,10 @@ const ElementList: React.FC<ElementListProps> = ({ elements, addPoint }) => {
   const dispatch = useDispatch();
   
   return (
-    <>
+    <section className="container-list-elements">
     {elements.map(({ id, name, age, points, imageUrl }) => {
         return (
-          <ul key={id}>
+          <ul className="list-elements" key={id}>
             <li>Name: {name}</li>
             <li>Age: {age}</li>
             <li>Points: {points}</li>
@@ -32,7 +32,7 @@ const ElementList: React.FC<ElementListProps> = ({ elements, addPoint }) => {
           </ul>
         );
       })}
-    </>
+    </section>
   )
 };
 

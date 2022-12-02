@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import HeaderContainer from "../components/common/HeaderContainer";
 
 const Home = () => {
 
@@ -11,6 +12,7 @@ const Home = () => {
   return (
     <>
       <h1>Home</h1>
+      <HeaderContainer />
       <button onClick={goToCategories}>Go to categories</button>
     </>
   )
